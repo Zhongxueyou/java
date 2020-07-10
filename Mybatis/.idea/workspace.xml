@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd150bb2-0f7f-4422-89fb-7f45ec488305" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\IDEA\apache-maven-3.6.1\repository" />
+        <option name="mavenHome" value="D:/IDEA/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\IDEA\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cCQs7x8k5TEA16AnCw00K60c1M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.1954023" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA项目\Mybatis\mybatis-01\src\main\resources\Mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA项目\Mybatis\mybatis-01\src\main\resources" />
+      <recent name="E:\IDEA项目\Mybatis\mybatis-01\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserDaoTest.test">
+    <configuration name="UserDaoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.dao.UserDaoTest" />
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IDutils.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.study.utils.IDutils" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.study.dao.UserDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.study.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.UserDaoTest" />
+      <item itemvalue="JUnit.UserDaoTest.test" />
+      <item itemvalue="JUnit.UserDaoTest" />
+      <item itemvalue="JUnit.IDutils.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserDaoTest.test" />
+        <item itemvalue="JUnit.IDutils.test" />
+        <item itemvalue="JUnit.UserDaoTest" />
+        <item itemvalue="Application.UserDaoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd150bb2-0f7f-4422-89fb-7f45ec488305" name="Default Changelist" comment="" />
+      <created>1590030298261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590030298261</updated>
+      <workItem from="1590030306964" duration="7455000" />
+      <workItem from="1590037867139" duration="4341000" />
+      <workItem from="1590052455739" duration="1815000" />
+      <workItem from="1590119456391" duration="1429000" />
+      <workItem from="1590120949831" duration="6155000" />
+      <workItem from="1590140407140" duration="1689000" />
+      <workItem from="1590197395636" duration="4950000" />
+      <workItem from="1590490411255" duration="54000" />
+      <workItem from="1590675585679" duration="384000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="309" y="48" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590038593242">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="309" y="48" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1590038593242" />
+    <state x="1041" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1590037225186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1041" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1590037225186" />
+    <state x="569" y="166" key="FileChooserDialogImpl" timestamp="1590129221272">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="569" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590129221272" />
+    <state width="1493" height="245" key="GridCell.Tab.0.bottom" timestamp="1590675969183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590675969183" />
+    <state width="1493" height="245" key="GridCell.Tab.0.center" timestamp="1590675969183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590675969183" />
+    <state width="1493" height="245" key="GridCell.Tab.0.left" timestamp="1590675969183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590675969183" />
+    <state width="1493" height="245" key="GridCell.Tab.0.right" timestamp="1590675969183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590675969183" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1590043725461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590043725461" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1590043725461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590043725461" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1590043725461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590043725461" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1590043725461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590043725461" />
+    <state x="276" y="36" key="SettingsEditor" timestamp="1590120893834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="276" y="36" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1590120893834" />
+    <state x="341" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1590197396350">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="341" y="218" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590197396350" />
+    <state x="567" y="325" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590033890487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="567" y="325" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1590033890487" />
+    <state x="175" y="133" key="new project wizard" timestamp="1590212776849">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="175" y="133" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1590212776849" />
+    <state x="417" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1590127759413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="417" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590127759413" />
+  </component>
+</project>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.dao.UserDao">
+	<!-- 全部用户  -->
+    <select id="getUserList" resultType="User">
+		select * from user
+	</select>
+
+
+	<!-- 单个用户  -->
+	<select id="getUser" resultType="User" parameterType="int">
+		select * from user where id=#{id}
+	</select>
+
+
+	<!-- 多对一  -->
+	<select id="getUserTeacherList" resultMap="getUserTeacherList">
+		select * from user
+	</select>
+	<resultMap id="getUserTeacherList" type="User">
+		<result property="id" column="id"></result>
+		<result property="name" column="name"></result>
+		<result property="password" column="password"></result>
+		<result property="age" column="age"></result>
+		<result property="birthday" column="birthday"></result>
+		<result property="rid" column="rid"></result>
+		<association property="teacher" column="rid" javaType="Teacher" select="getTeacherList"/>
+	</resultMap>
+	<select id="getTeacherList" resultType="Teacher">
+		select * from teacher where id=#{rid}
+	</select>
+
+	<insert id="insert" parameterType="User">
+		insert into user (id,name,password,age,birthday,rid)
+		values (#{id},#{name},#{password},#{age},#{birthday},#{rid})
+	</insert>
+
+
+
+	
+</mapper>
