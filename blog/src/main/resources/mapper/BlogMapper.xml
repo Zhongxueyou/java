@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.blog.mapper.BlogMapper">
+    <!-- 多对一  -->
+    <select id="getBlogPage" resultMap="getBlogPage" parameterType="int">
+		select * from t_blog limit #{start},#{pageSize}
+	</select>
+    <resultMap id="getBlogPage" type="Blog">
+        <result property="id" column="id"></result>
+        <result property="title" column="title"></result>
+        <result property="flag" column="flag"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="published" column="published"></result>
+        <result property="description" column="description"></result>
+        <result property="views" column="views"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="createTime" column="create_time"></result>
+        <result property="updateTime" column="update_time"></result>
+        <result property="typeid" column="typeid"></result>
+        <result property="userid" column="userid"></result>
+        <association property="type" column="typeId" javaType="Type" select="getTypeList"/>
+        <association property="user" column="userId" javaType="User" select="getUserList"/>
+    </resultMap>
+    <select id="getTypeList" resultType="Type">
+		select * from t_type where id=#{typeId}
+	</select>
+    <select id="getUserList" resultType="User">
+		select * from t_user where id=#{userId}
+	</select>
+
+    <!-- 多对一  -->
+    <select id="getBlogPage1" resultMap="getBlogPage1" parameterType="object">
+		select * from t_blog
+		<where>
+            <if test="title != null and title != ''">
+                and title = #{title}
+            </if>
+            <if test="recommend != false">
+                and recommend = #{recommend}
+            </if>
+            <if test="typeId!=0">
+                and typeid=#{typeId}
+            </if>
+        </where>
+		limit #{start},#{pageSize}
+	</select>
+    <resultMap id="getBlogPage1" type="Blog">
+        <result property="id" column="id"></result>
+        <result property="title" column="title"></result>
+        <result property="flag" column="flag"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="published" column="published"></result>
+        <result property="createTime" column="create_time"></result>
+        <result property="updateTime" column="update_time"></result>
+        <result property="typeid" column="typeid"></result>
+        <association property="type" column="typeId" javaType="Type" select="getTypeList1"/>
+    </resultMap>
+    <select id="getTypeList1" resultType="Type">
+		select * from t_type where id=#{typeId}
+	</select>
+
+    <insert id="addBlog" parameterType="blog" >
+        insert into t_blog
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title !=null">title,</if>
+            <if test="content !=null">content,</if>
+            <if test="firstPicture !=null">first_picture,</if>
+            <if test="flag !=null">flag,</if>
+            views,
+            appreciation,
+            shareStatement,
+            commentabled,
+            published,
+            recommend,
+            create_time,
+            update_time,
+            typeid,
+            description,
+            tagid,
+            userid
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="title !=null">#{title},</if>
+            <if test="content !=null">#{content},</if>
+            <if test="firstPicture !=null">#{firstPicture},</if>
+            <if test="flag !=null">#{flag},</if>
+            #{views},
+            #{appreciation},
+            #{shareStatement},
+            #{commentabled},
+            #{published},
+            #{recommend},
+            #{createTime},
+            #{updateTime},
+            #{typeid},
+            #{description},
+            #{tagid},
+            #{userid},
+        </trim>
+    </insert>
+
+    <update id="updateBlog" parameterType="blog">
+        UPDATE t_blog set title = #{title},content = #{content},first_picture = #{firstPicture}
+                ,flag = #{flag},content = #{content},description= #{description}
+                ,appreciation = #{appreciation},shareStatement = #{shareStatement},commentabled = #{commentabled}
+                ,published = #{published},recommend = #{recommend},update_time = #{updateTime}
+                ,typeid = #{typeid},tagid = #{tagid}
+        WHERE id = #{id};
+    </update>
+
+    <delete id="deleteBlog" parameterType="long">
+        delete from t_blog where id=#{id}
+    </delete>
+
+
+
+    <!-- 多对一  -->
+    <select id="getBlogPage2" resultMap="getBlogPage2" parameterType="object">
+		select * from t_blog
+		where title like #{query} or content like #{query}
+		limit #{start},#{pageSize}
+	</select>
+    <resultMap id="getBlogPage2" type="Blog">
+        <result property="id" column="id"></result>
+        <result property="title" column="title"></result>
+        <result property="flag" column="flag"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="published" column="published"></result>
+        <result property="description" column="description"></result>
+        <result property="views" column="views"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="createTime" column="create_time"></result>
+        <result property="updateTime" column="update_time"></result>
+        <result property="typeid" column="typeid"></result>
+        <result property="userid" column="userid"></result>
+        <association property="type" column="typeId" javaType="Type" select="getTypeList2"/>
+        <association property="user" column="userId" javaType="User" select="getUserList2"/>
+    </resultMap>
+    <select id="getTypeList2" resultType="Type">
+		select * from t_type where id=#{typeId}
+	</select>
+    <select id="getUserList2" resultType="User">
+		select * from t_user where id=#{userId}
+	</select>
+
+
+
+
+
+
+    <!-- 多对一  -->
+    <select id="getBlogPage3" resultMap="getBlogPage3" parameterType="object">
+        select * from t_blog
+        <where>
+            <if test="typeQuery.title != null">
+                and title = #{typeQuery.title}
+            </if>
+            <if test="typeQuery.recommend != false">
+                and recommend = #{typeQuery.recommend}
+            </if>
+            <if test="typeQuery.typeid!=0">
+                and typeid=#{typeQuery.typeid}
+            </if>
+        </where>
+        limit #{start},#{pageSize}
+    </select>
+    <resultMap id="getBlogPage3" type="Blog">
+        <result property="id" column="id"></result>
+        <result property="title" column="title"></result>
+        <result property="flag" column="flag"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="published" column="published"></result>
+        <result property="createTime" column="create_time"></result>
+        <result property="updateTime" column="update_time"></result>
+        <result property="typeid" column="typeid"></result>
+        <result property="userid" column="userid"></result>
+        <association property="type" column="typeId" javaType="Type" select="getTypeList3"/>
+        <association property="user" column="userId" javaType="User" select="getUserList3"/>
+    </resultMap>
+    <select id="getTypeList3" resultType="Type">
+		select * from t_type where id=#{typeId}
+	</select>
+    <select id="getUserList3" resultType="User">
+		select * from t_user where id=#{userId}
+	</select>
+
+
+    <!-- 多对一  -->
+    <select id="getBlogPage4" resultMap="getBlogPage4" parameterType="object">
+		select * from t_blog
+		where tagid like #{tagid}
+	</select>
+    <resultMap id="getBlogPage4" type="Blog">
+        <result property="id" column="id"></result>
+        <result property="title" column="title"></result>
+        <result property="flag" column="flag"></result>
+        <result property="recommend" column="recommend"></result>
+        <result property="published" column="published"></result>
+        <result property="description" column="description"></result>
+        <result property="views" column="views"></result>
+        <result property="firstPicture" column="first_picture"></result>
+        <result property="createTime" column="create_time"></result>
+        <result property="updateTime" column="update_time"></result>
+        <result property="typeid" column="typeid"></result>
+        <result property="userid" column="userid"></result>
+        <result property="tagid" column="tagid"></result>
+        <association property="type" column="typeId" javaType="Type" select="getTypeList4"/>
+        <association property="user" column="userId" javaType="User" select="getUserList4"/>
+        <association property="tags" column="tagId" javaType="ArrayList" select="getTagList4"/>
+    </resultMap>
+    <select id="getTypeList4" resultType="Type">
+		select * from t_type where id=#{typeId}
+	</select>
+    <select id="getUserList4" resultType="User">
+		select * from t_user where id=#{userId}
+	</select>
+    <select id="getTagList4" resultType="Tag">
+		select * from t_tag where id=#{tagId}
+	</select>
+
+</mapper>

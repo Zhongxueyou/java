@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.blog.mapper.TypeMapper">
+    <!-- 一对多  -->
+    <select id="getType" resultMap="getType">
+		select * from t_type
+	</select>
+    <resultMap id="getType" type="Type">
+        <result property="id" column="id"></result>
+        <collection property="blogs" column="id" javaType="ArrayList" select="getBlog"/>
+    </resultMap>
+    <select id="getBlog" resultType="Blog">
+		select * from t_blog where typeid=#{id}
+	</select>
+
+</mapper>
